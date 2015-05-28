@@ -1,0 +1,6 @@
+ErrorDocument 401 /rejection.html
+AuthUserFile /home/vagrant/.htpass
+AuthGroupFile /dev/null
+AuthName "Realm-name"
+AuthType Basic
+require valid-user
