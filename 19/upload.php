@@ -40,7 +40,7 @@ if ($_FILES['userfile']['type'] != 'text/plain' && $_FILES['userfile']['type'] !
 }
 
 // Put the file where we'd like it
-$upfile = '/home/vagrant/uploads' . $_FILES['userfile']['tmp_name'];
+$upfile = '/home/vagrant/uploads/' . $_FILES['userfile']['name'];
 
 if (is_uploaded_file($_FILES['userfile']['tmp_name'])) {
     if (!move_uploaded_file($_FILES['userfile']['tmp_name'], $upfile)) {
